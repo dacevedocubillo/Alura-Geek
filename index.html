@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tienda de álbumes musicales.">
+<title>Alura Geek | Tienda de Álbumes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="estilos.css">
+
+<link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo de la tienda Alura Geek" loading="lazy">
+        </a>
+    </div>
+
+    <nav class="navbar" aria-label="Menú principal">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#pop">Pop</a></li>
+            <li><a href="#latino">Latino</a></li>
+            <li><a href="#kpop">K-Pop</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+        <a href="login.html" class="boton-login">Iniciar sesión</a>
+
+   
+</header>
+
+<section class="banner">
+    <div class="banner-content">
+        <h1 class="banner-title">Febrero Promocional</h1>
+        <p class="banner-subtitle">Álbumes con 33% de descuento</p>
+        <a href="#pop" class="banner-button">Ver álbumes</a>
+    </div>
+</section>
+
+<main class="contenido-productos">
+
+<section id="pop" class="section-albums-pop">
+<h2 class="titulo">Pop</h2>
+<ul class="lista-productos">
+
+
+
+    <li class="producto">
+        <img src="img/1989 taylor swift.png" alt="Álbum 1989 de Taylor Swift" loading="lazy">
+        <h3 class="descripcion-producto">1989</h3>
+        <p class="artista">Taylor Swift</p>
+        <p class="precio-producto">$60.00</p>
+        <a href="#" class="boton-producto">Ver producto</a>
+    </li>
+
+
+    <li class="producto">
+        <img src="img/midnight memories - one direction.jpg" alt="Álbum Midnight Memories de One Direction" loading="lazy">
+        <h3 class="descripcion-producto">Midnight Memories</h3>
+        <p class="artista">One Direction</p>
+        <p class="precio-producto">$60.00</p>
+        <a href="#" class="boton-producto" id="verProductoBtn">Ver producto</a>
+    </li>
+
+
+
+    <li class="producto">
+        <img src="img/reflection -  fifth harmony.png" alt="Álbum Reflection de Fith Harmony" loading="lazy">
+        <h3 class="descripcion-producto">Reflection</h3>
+        <p class="artista">Fith Harmony</p>
+        <p class="precio-producto">$60.00</p>
+        <a href="#" class="boton-producto" id="verProductoBtn">Ver producto</a>
+    </li>
+
+
+    <li class="producto">
+        <img src="img/stars dance - selena gomez.png" alt="Álbum Stars Dance de Selena Gomez" loading="lazy">
+        <h3 class="descripcion-producto">Stars Dance</h3>
+        <p class="artista">Selena Gomez</p>
+        <p class="precio-producto">$60.00</p>
+        <a href="#" class="boton-producto">Ver producto</a>
+    </li>
+
+
+
+
+    <li class="producto">
+         <img src="img/the tame - lady gaga.png" alt="Álbum The Fame de Lady Gaga"
+        loading="lazy">
+         <h3 class="descripcion-producto"> The Fame </h3>
+<p class="artista">
+        Lady Gaga
+    </p>
+
+    <p class="precio-producto">
+        $60.00
+    </p>
+
+    <a href="#" class="boton-producto">
+        Ver producto
+    </a>
+    </li>
+
+
+
+    <li class="producto">
+
+    <img
+        src="img/dangerous woman - ariana grande.jpg"
+        alt="Álbum Dangerous Woman de Ariana Grande"
+        loading="lazy">
+
+    <h3 class="descripcion-producto">
+        Dangerous Woman
+    </h3>
+
+    <p class="artista">
+        Ariana Grande
+    </p>
+
+    <p class="precio-producto">
+        $60.00
+    </p>
+
+    <a href="#" class="boton-producto">
+        Ver producto
+    </a>
+
+</li>
+</ul>
+
+ 
+<!-- Modal genérico -->
+<div id="modalProducto" class="modal">
+    <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <h2 id="modalTitulo"></h2>
+        <img id="modalImagen" src="" alt="">
+        <p id="modalArtista"></p>
+        <p id="modalPrecio"></p>
+        <button class="boton-comprar">Comprar ahora</button>
+    </div>
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="albums-latino" id="latino">
+
+    <h2 class="titulo">Latino</h2>
+
+    <ul class="lista-productos">
+
+        <li class="producto">
+
+            <img
+                src="img/un verano sin ti - bad bunny.jpg"
+                alt="Álbum Un Verano Sin Ti de Bad Bunny"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Un Verano Sin Ti
+            </h3>
+
+            <p class="artista">
+                Bad Bunny
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/motomami-rosalia.jpg"
+                alt="Álbum Motomami de Rosalía"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Motomami
+            </h3>
+
+            <p class="artista">
+                Rosalía
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/mañana será bonito -karol g.jpg"
+                alt="Álbum Mañana Será Bonito de Karol G"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Mañana Será Bonito
+            </h3>
+
+            <p class="artista">
+                Karol G
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/shakira-shakira.jpg"
+                alt="Álbum Shakira de Shakira"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Shakira
+            </h3>
+
+            <p class="artista">
+                Shakira
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/legendaddy - daddy yankee.jpg"
+                alt="Álbum Legendaddy de Daddy Yankee"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Legendaddy
+            </h3>
+
+            <p class="artista">
+                Daddy Yankee
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/colores -jbalvin.jpg"
+                alt="Álbum Colores de J Balvin"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Colores
+            </h3>
+
+            <p class="artista">
+                J Balvin
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="diversos" id="kpop">
+
+    <h2 class="titulo">K-Pop</h2>
+
+    <ul class="lista-productos">
+
+        <li class="producto">
+
+            <img
+                src="img/love yourself tear -bts.jpg"
+                alt="Álbum Love Yourself: Tear de BTS"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Love Yourself: Tear
+            </h3>
+
+            <p class="artista">
+                BTS
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/ready to be - twice.jpg"
+                alt="Álbum Ready To Be de TWICE"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Ready To Be
+            </h3>
+
+            <p class="artista">
+                TWICE
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/proof - bts.jpg"
+                alt="Álbum Proof de BTS"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Proof
+            </h3>
+
+            <p class="artista">
+                BTS
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/map of the soul - bts.png"
+                alt="Álbum Map of the Soul: 7 de BTS"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Map of the Soul: 7
+            </h3>
+
+            <p class="artista">
+                BTS
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/the name chapter temptation - txt.jpg"
+                alt="Álbum The Name Chapter: Temptation de TXT"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                The Name Chapter: Temptation
+            </h3>
+
+            <p class="artista">
+                TXT
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+        <li class="producto">
+
+            <img
+                src="img/formula of love-twice.png"
+                alt="Álbum Formula of Love de TWICE"
+                loading="lazy">
+
+            <h3 class="descripcion-producto">
+                Formula of Love
+            </h3>
+
+            <p class="artista">
+                TWICE
+            </p>
+
+            <p class="precio-producto">
+                $60.00
+            </p>
+
+            <a href="#" class="boton-producto">
+                Ver producto
+            </a>
+
+        </li>
+
+    </ul>
+
+</section>
+
+</main>
+
+<footer class="rodapie" id="contacto">
+
+    <div class="contenido">
+
+        <img
+            class="rodapie-logo"
+            src="img/Logo.png"
+            alt="Logo de Alura Geek"
+            loading="lazy">
+
+        <nav class="links">
+
+            <a href="#">Quiénes somos</a>
+
+            <a href="#">Política de privacidad</a>
+
+            <a href="#">Programa de fidelidad</a>
+
+            <a href="#">Nuestras tiendas</a>
+
+            <a href="#">Quiero ser franquiciado</a>
+
+            <a href="#">Anúnciate aquí</a>
+
+        </nav>
+
+        <div class="contacto">
+
+            <h2 class="titulo-hable-nosotros">
+                Hable con nosotros
+            </h2>
+
+            <form class="campos">
+
+                <input
+                    id="nombre"
+                    class="campo-nombre"
+                    type="text"
+                    placeholder="Nombre"
+                    required>
+
+                <textarea
+                    id="mensaje"
+                    class="campo-mensaje"
+                    placeholder="Escribe tu mensaje"
+                    rows="5"
+                    required></textarea>
+
+                <button
+                    class="boton-mensaje"
+                    type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<footer class="footer">
+
+    <p class="titulo-footer">
+        © 2026 Daniela Acevedo. Todos los derechos reservados.
+    </p>
+
+</footer>
+
+<script>
+
+const botones = document.querySelectorAll(".lista-productos .boton-producto");
+const modal = document.getElementById("modalProducto");
+const cerrar = modal.querySelector(".cerrar");
+
+const modalTitulo = document.getElementById("modalTitulo");
+const modalImagen = document.getElementById("modalImagen");
+const modalArtista = document.getElementById("modalArtista");
+const modalPrecio = document.getElementById("modalPrecio");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", e => {
+        e.preventDefault();
+        const producto = boton.closest(".producto");
+
+        // Extraer datos
+        const titulo = producto.querySelector(".descripcion-producto").textContent;
+        const artista = producto.querySelector(".artista").textContent;
+        const precio = producto.querySelector(".precio-producto").textContent;
+        const imagenSrc = producto.querySelector("img").src;
+
+        // Insertar en modal
+        modalTitulo.textContent = titulo;
+        modalArtista.textContent = artista;
+        modalPrecio.textContent = precio;
+        modalImagen.src = imagenSrc;
+        modalImagen.alt = titulo;
+
+        // Mostrar modal
+        modal.style.display = "flex";
+    });
+});
+
+// Cerrar modal
+cerrar.onclick = () => modal.style.display = "none";
+window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+
+
+
+
+</script>
+
+</body>
+</html>

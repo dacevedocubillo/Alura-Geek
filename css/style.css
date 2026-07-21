@@ -1,0 +1,337 @@
+/*=============================
+    CONFIGURACIÓN GENERAL
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Raleway',sans-serif;
+    background:#f5f5f5;
+    color:#464646;
+    line-height:1.5;
+}
+
+/*=============================
+        HEADER
+==============================*/
+
+.header{
+    width:100%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+/*=============================
+        NAVBAR
+==============================*/
+
+.image-head{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.head_logo{
+    width:170px;
+    height:auto;
+    transition:.3s;
+}
+
+.head_logo:hover{
+    transform:scale(1.05);
+}
+
+.menu{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.menu li{
+    list-style:none;
+}
+
+.menu a{
+    color:#464646;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#de0808;
+}
+
+.login{
+    background:#de0808;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login:hover{
+    background:#b30000;
+}
+
+/*=============================
+          BANNER
+==============================*/
+
+.banner{
+    position:relative;
+    width:100%;
+    min-height:420px;
+    display:flex;
+    align-items:flex-end;
+    background:url("../img/My project-1.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+.titulo-principal{
+    color:#fff;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.titulo-secundario{
+    color:#fff;
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
+
+.boton-banner{
+    display:inline-block;
+    background:#de0808;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 12px rgba(222,8,8,.35);
+}
+
+.boton-banner:hover{
+    background:#b30000;
+}
+
+/*=============================
+          FOOTER
+==============================*/
+
+.rodapie{
+    background:#EAF2FD;
+    padding:60px 8%;
+}
+
+.contenido{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+}
+
+.rodapie-logo{
+    width:180px;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.links a{
+    color:#464646;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:#de0808;
+}
+
+.contacto{
+    flex:1;
+    max-width:500px;
+}
+
+.titulo-hable-nosotros{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.campos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.campo-nombre,
+.campo-mensaje{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    outline:none;
+}
+
+.campo-nombre:focus,
+.campo-mensaje:focus{
+    border-color:#de0808;
+}
+
+.campo-mensaje{
+    min-height:120px;
+    resize:vertical;
+}
+
+.boton-mensaje{
+    width:180px;
+    padding:15px;
+    border:none;
+    border-radius:6px;
+    background:#de0808;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.boton-mensaje:hover{
+    background:#b30000;
+}
+
+/*=============================
+      FOOTER INFERIOR
+==============================*/
+
+.footer{
+    background:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+.titulo-footer{
+    font-size:15px;
+    color:#464646;
+}
+
+/*=============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+.image-head{
+    flex-direction:column;
+    gap:20px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.titulo-principal{
+    font-size:2.3rem;
+}
+
+.titulo-secundario{
+    font-size:1.1rem;
+}
+
+.contenido{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.contacto{
+    width:100%;
+    max-width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.head_logo{
+    width:140px;
+}
+
+.titulo-principal{
+    font-size:2rem;
+}
+
+.titulo-secundario{
+    font-size:1rem;
+}
+
+.boton-banner{
+    width:100%;
+    text-align:center;
+}
+
+.login{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+
+.banner{
+    position:relative;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.content{
+    position:relative;
+    z-index:2;
+}

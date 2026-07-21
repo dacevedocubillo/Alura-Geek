@@ -1,0 +1,415 @@
+/* ===== Header ===== */
+.header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem; /* espacio entre logo, menú y botón */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navegación */
+.navbar {
+    flex: 1; /* ocupa espacio central */
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center; /* centra el menú */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #0077cc;
+}
+
+/* Botón login */
+.boton-login {
+    background-color: #0077cc; /* azul corporativo */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.boton-login:hover {
+    background-color: #005fa3;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+
+    .boton-login {
+        margin-top: 1rem;
+        align-self: flex-end;
+    }
+}
+
+
+
+
+
+/* ===== Banner ===== */
+.banner {
+    background: url("img/banner-image.png") center/cover no-repeat; /* Imagen de fondo */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+/* Fondo semitransparente para mejorar legibilidad */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+/* Título */
+.banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Subtítulo */
+.banner-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón */
+.banner-button {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #005fa3;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+/* ===== Contenedor principal ===== */
+.contenido-productos {
+    padding: 2rem;
+    background-color: #fafafa;
+}
+
+/* Títulos de sección */
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* ===== Grid de productos ===== */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== Card de producto ===== */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Imagen */
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Texto */
+.descripcion-producto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #222;
+}
+
+.artista {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.precio-producto {
+    font-size: 1rem;
+    color: #0077cc;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Botón */
+.boton-producto {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-producto:hover {
+    background-color: #005fa3;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ===== Footer principal ===== */
+.rodapie {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+}
+
+.rodapie .contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.rodapie-logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Enlaces */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+/* Contacto */
+.contacto {
+    flex: 1 1 300px;
+}
+
+.titulo-hable-nosotros {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.campo-nombre,
+.campo-mensaje {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.campo-nombre:focus,
+.campo-mensaje:focus {
+    outline: 2px solid #0077cc;
+}
+
+/* Botón enviar */
+.boton-mensaje {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-mensaje:hover {
+    background-color: #005fa3;
+}
+
+/* ===== Footer secundario ===== */
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer .titulo-footer {
+    margin: 0;
+}
+
+
+/* Botón Ver producto */
+.boton-producto {
+    display: inline-block;
+    background-color: #d60000;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-producto:hover {
+    background-color: #a80000;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.lista-productos {
+    list-style: none; /* elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
